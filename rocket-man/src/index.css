@@ -1,7 +1,12 @@
+:root {
+  --left: rgba(174, 84, 139, 1);
+  --right: rgba(63, 20, 86, 1);
+}
+
 body {
   font-family: monospace;
   color: white;
-  background: linear-gradient(90deg, rgba(174, 84, 139, 1) 0%, rgba(63, 20, 86, 1) 100%);
+  background: linear-gradient(90deg, var(--left) 0%, var(--right) 100%);
 }
 
 h1 {
@@ -50,4 +55,9 @@ tr *:first-child {
 
 tbody td {
   border-top: 1px solid white;
+}
+
+tbody tr:hover{
+  background-color: rgb(255 255 255 / 30%);
+  cursor: pointer;
 }
